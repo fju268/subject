@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+#container {
+    width: auto;
+}
+
+#header {
+    background-color: #7CFC00;
+}
+
+#menu {
+    background-color: #FF00FF;
+    height: auto;
+    width: 15%;
+    float: left;
+}
+
+#content {
+    background-color: #EEEEEE;
+    height: auto;
+    width: 85%;
+    float: left;
+
+}
+
+#footer {
+    background-color: #FFA500;
+    clear: both;
+    text-align: center;
+
+}
+</style>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1 style="margin-bottom:0;">開會通知</h1>
+            <label>請選擇傳送對象:
+                <input list="people" name="myBrowser"></label>
+            <datalist id="people">
+                <option value="醫師">
+                <option value="院長">
+                <option value="副院長">
+                <option value="醫事人員">
+                <option value="醫學資訊人員">
+            </datalist>
+        </div>
+        <div id="menu">
+            <select name="menu" multiple>
+                <option value="one">選單一二三日</option>
+                <option value="two">選單二</option>
+                <option value="three">選單三</option>
+                <option value="four">選單四</option>
+                <option value="five">選單五</option>
+            </select>
+        </div>
+        <div id="content">
+            <p>寄信人</p><br>
+            <p>收件人</p><input type="text" name="sender"><br>
+            <p>標題</p><input type="text" name="title">
+            <p><textarea name="emailed" rows="6" cols="65" required>
+        	</textarea></p>
+            <p>
+                <button>送出</button>
+            </p>
+        </div>
+        <div id="footer">
+            版權所有 © 國泰醫院</div>
+    </div>
+</body>
+
+</html>
